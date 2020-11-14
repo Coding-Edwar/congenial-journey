@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links</h1>
+
+    <p>Links and Images will be easy to use when building <a href="images.html"> web pages</a>.</p>
+
+    <p>Links, Three particular links:</p>
+
+    <ul>
+        <li><strong>Absolute Links</strong>"the most detailed way...to refer to a web resource"..."Usually a better idea to reserve absolute links only for directing users to a different website," than one the user click the from. For exmaple;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML"></a>MDN (Mozilla Developer Network)</li>
+
+        <li><strong>Relative Links</strong>"point to another file in your website from the vantage point of the file being edited." For example; link to <a href="misc/extras.html"> extras pages</a>.</li>
+
+        <li><strong>Root-Relative Links</strong>"Root-relative links are some of the most useful kinds of links. They’re explicit enough to avoid the potential confusion of relative links, but they’re not overly explicit like absolute links."</li>
+
+        <h3> --- This WON'T work --- </h3>
+            <p>This page is about miscellaneous HTML things, but you may also be interested in <a href='links.html'>links</a> or <a href='images.html'>images</a>.</p>
+
+        <h3> --- This WILL work properly --- </h3>
+             <p>This page is about miscellaneous HTML things, but you may also be interested in <a href='../links.html'>links</a> or <a href='../images.html'>images</a>.</p>
+    <h5>"To fix this, we need the .. syntax. Two consecutive dots in a file path represent a pointer to the parent directory."..."This is like saying, “I know extras.html is in the misc folder. Go up a folder and look for links.html and images.html in there.”"</h5>
+    </ul>
+</body>
+</html>
